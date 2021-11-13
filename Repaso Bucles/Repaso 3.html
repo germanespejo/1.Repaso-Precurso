@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso</title>
+</head>
+<body>
+<script>
+let n = parseInt(prompt("Escribe un número:"));
+if(n < 0){
+    console.log("Se ignoran los valores negativos.");
+    n += n;
+}else{
+while(n != 0) {
+        n = parseInt(prompt("Escriba otro número"));
+        n += n;
+}
+}console.log(n);
+</script>
+</body>
+</html>

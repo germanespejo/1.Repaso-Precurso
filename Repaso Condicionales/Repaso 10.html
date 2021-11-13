@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso</title>
+</head>
+<body>
+<script>
+console.log("Menú de ferretería:");
+console.log("");
+console.log("1. Herramientas");
+console.log("2. Tornillos");
+console.log("3. Tuercas");
+console.log("");
+let s = parseInt(prompt("Elija una opción numérica:"));
+if(s == 1){
+    console.log("Ha elegido Herramientas.");
+}else if(s == 2){
+    console.log("Ha elegido Tornillos.");
+}else if(s == 3){
+    console.log("Ha elegido Tuercas");
+}else{
+    console.log("Elección errónea");
+}switch(s){
+    case 1: 
+    console.log("Ha elegido Herramientas.");
+    break;
+    case 2: 
+    console.log("Ha elegido Tornillos.");
+    break;
+    case 3: 
+    console.log("Ha elegido Tuercas");
+    break;
+    default: 
+    console.log("Elección errónea");  
+}
+</script>
+</body>
+</html>

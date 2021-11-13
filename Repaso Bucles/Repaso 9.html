@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso</title>
+</head>
+<body>
+<script>
+let p = prompt("Introduzca una fecha de nacimiento en este formato: 'xx-xx-xxxx':");
+let n1a = parseInt(p.substring(0, 2)) + parseInt(p.substring(3, 5)) + parseInt(p.substring(6, 10));
+let n1 = n1a.toString();
+let n2 = parseInt(n1.substring(0, 1)) + parseInt(n1.substring(1, 2)) + parseInt(n1.substring(2, 3)) + parseInt(n1.substring(3, 4));
+let n2a = n2.toString();
+if(n2 >= 10){
+    let n3 = parseInt(n2a.substring(0, 1)) + parseInt(n2a.substring(1, 2));
+    console.log(n3);
+}else{
+    console.log(n2);
+}
+</script>
+</body>
+</html>

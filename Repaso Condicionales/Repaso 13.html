@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso</title>
+</head>
+<body>
+<script>
+let n = parseInt(prompt("Escribe tu edad:"));
+if(n < 18){
+    console.log("Eres menor de edad y no puedes alquilar un vehículo.");
+}else{
+    let c = prompt("¿Tienes carnet de conducir?");
+    if(c == "no"){
+        console.log("No puedes alquilar un vehículo.");
+    }else if(c == "sí"){
+        let d1 = prompt("Escribe tu nombre y apellido:");
+        let d2 = prompt("Introduce la ciudad de recogida de vehículo:");
+        let d3 = parseInt(prompt("Introduce el número de días que vas a alquilar el vehículo:"));
+        if(d3 == 7){
+            d4 = 150;
+        }else{
+            d4 = d3 * 25;
+        }
+        console.log(d1 + ", " + d2 + ", alquiler de " + d3 + " días. Precio: " + d4 + " euros.");
+    }
+}
+</script>
+</body>
+</html>

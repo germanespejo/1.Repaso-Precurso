@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso</title>
+</head>
+<body>
+<script>
+let n = prompt("Escribe un número:");
+let n1 = prompt("Especifica si quieres convertirlo a centígrados (escribe C) o a farenheit (escribe F):");
+let F = 0;
+let C = 0;
+if(n1 == "C"){
+    F += (n * 9 / 5) + 32;
+    console.log(F);
+}else if(n1 == "F"){
+    C += n -32 *5 / 9;
+    console.log(C);
+}
+</script>
+</body>
+</html>

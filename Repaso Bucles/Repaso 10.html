@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso</title>
+</head>
+<body>
+<script>
+    let p = prompt("Escriba una contraseña:");
+    if(p.length < 8){
+        console.log("Contraseña demasiado corta.");
+    }else if(hasNumber(p) == false){
+        console.log("Debe contener números");
+    }else if(isUpperCase(p) == false){
+        console.log("Debe contener letras en mayúscula");
+    }else{
+        console.log("¡Contraseña correcta!");
+    }
+</script>
+</body>
+</html>
